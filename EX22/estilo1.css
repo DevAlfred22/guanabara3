@@ -4,6 +4,17 @@
     padding: 0px;
     
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root{
+
+   --fonte1: 'Grenze Gotisch', serif;
+   --fonte2:'Dancing Script', cursive;
+    
+}
+
 html,body{
     background-color: darkgray;
     min-height: 100vh;
@@ -15,14 +26,25 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2);
 }
+
 
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 6vh;
+    font-size: 3.5em;
+
+ 
 }
+
+
+
 header>p{
     padding-bottom: 50px;
+   
 
 
 }
@@ -31,7 +53,6 @@ header a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
-
 
 }
 
@@ -46,6 +67,10 @@ section{
     padding-bottom:10vh ;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 5vh;
+    font-weight: 2em;
+   
 }
 
 section.normal{
@@ -62,9 +87,31 @@ section.imagem{
 }
 
 section.imagem>p{
-
+    
+    display: inline-block;
+    padding: 5px;
     width: 400px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.455);
+    text-shadow: 2px 2px 2px black;
+
+}
+
+section#img01{
+    background-image: url(background01.jpg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:inset 6px 6px 14px 0px black;
+
+}
+
+section#img02{
+    background-image: url(../EX22/background02.png);
+    background-position: right;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 14px 0px black;
+    
 
 }
 
@@ -73,5 +120,6 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
