@@ -7,6 +7,19 @@
     <title>Tabelas Grandes</title>
     <style>
 
+         caption{
+              font-size: 2em;
+              font-family: 'Times New Roman', Times, serif;
+              background-color: lightgray;
+              padding: 6px;
+              box-shadow: 1px 5px 1px 1px rgb(82, 82, 82);
+               }
+
+         h1{
+              text-align: right;
+            
+         }
+
          body{
              font-family: Arial, Helvetica, sans-serif;
             }
@@ -14,14 +27,31 @@
          table{
             width: 500px;
             border-collapse:collapse ;
+            box-shadow: 1px 1px 1px 1px rgb(82, 82, 82);
+            position: relative;
 
+            }
+
+         tbody>tr:nth-child(2n)
+              {background-color: lightgray;
+              
             }
 
          td,th{
             border: 1px solid black;
             padding: 10px;
-            }
-         
+            
+           }
+
+         thead>tr>th{
+                position: sticky;
+                top: -1px;
+                background-color: gray;
+    
+    
+             }
+
+
          thead,tfoot{
             background-color: gray;
             color: white;
@@ -37,10 +67,12 @@
 
     <table>
    
+ <caption>Estados Pertencentes a Federação</caption>
+
  <thead>
         <tr>
-            <td><strong>Estado</strong></td>
-            <td><strong>População</strong></td>
+            <th scope="col" ><strong>Estado</strong></th>
+            <th scope="col"><strong>População</strong></th>
         </tr>
  </thead>    
 
@@ -182,7 +214,7 @@
 <tfoot>
          <tr>
         
-                <td><strong>Total de População</strong></td>
+                <th scope="row"><strong>Total de População</strong></th>
                 <td><strong>00000</strong></td>
             
          </tr>
@@ -191,6 +223,7 @@
 </tfoot>
         
     </table>
+   
     
 </body>
 </html>
